@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+  <title>RPSLS</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
+      <a class="navbar-brand ms-3" href="#">
+        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+          loading="lazy">
+        <span class="ms-2">Rock Paper Scissors</span>
+      </a>
+    </nav>
+  </header>
+  <main class="container-fluid">
+    <div class="row justify-content-around mt-5">
+      <div class="offset-1 col-2">
+        <button class=" btn btn-danger" onclick="play('rock')">Rock</button>
+      </div>
+      <div class="col-2">
+        <button class=" btn btn-info" onclick="play('paper')">Paper</button>
+      </div>
+      <div class="col-2">
+        <button class=" btn btn-warning" onclick="play('scissors')">Scissors</button>
+      </div>
+      <div class="col-2">
+        <button class=" btn btn-success" onclick="play('lizard')">Lizard</button>
+      </div>
+      <div class="col-2">
+        <button class=" btn btn-secondary" onclick="play('spock')">Spock</button>
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="col-6" id="score-table"></div>
+      <div class="col-6" id="play-zone"></div>
+    </div>
+  </main>
+  <footer class="bg-dark text-light">
+    <div class="text-center no-select">
+      <p><small>Made with 💖 by Codeworks</small></p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
